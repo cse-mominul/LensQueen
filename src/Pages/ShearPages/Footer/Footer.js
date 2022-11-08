@@ -5,7 +5,7 @@ const Footer = () => {
         <div>
             <footer className="footer footer-center p-10 bg-primary text-primary-content">
   <div>
-    <img className='w-36' src={logo}></img>
+    <img className='w-20' src={logo}></img>
     <p className="font-bold">
       Lens Queen <br/>Providing reliable service since 2015
     </p> 
