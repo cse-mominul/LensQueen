@@ -1,14 +1,28 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../../Assets/lensqueenlogo.png'
+import { AuthContext } from '../../../Contexts/AuthProvider/AuthProvider';
+
+
 
 const Header = () => {
+  const {user,logOut} = useContext(AuthContext);
     const menuitems = <>
     <li><Link to="/">Home</Link></li>
+    <li><Link to='/service'>Services</Link></li>
+   <li><Link to='/addservice'>Add Service</Link></li>
+    <li><Link to='/review'>Review</Link></li>
+    <li><Link to="/blog">Blog</Link></li>
+
     </>
+     const handleLogOut = () => {
+      logOut()
+          .then(() => { })
+          .catch(error => console.error(error))
+  }
     return (
         <div>
-           <div className="navbar pb-10 pt-12 bg-base-100">
+           <div className="navbar pb-5 pt-6 text-primary-content bg-primary bg-base-100">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -26,7 +40,22 @@ const Header = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Get started</a>
+  
+   
+  {
+                                user?.uid ?
+                                    <>
+                                   
+                                    <button className='btn' variant="light" onClick={handleLogOut}>Log out</button>
+                                    <img className='rounded-full ml-4 w-20' src={user?.photoURL}  alt=''></img>
+                                    </>
+                                    :
+                                    <>
+                                        <Link className='btn mr-2' to='/login'>Login</Link>
+                                        <Link className='btn' to='/singup'>SingUp</Link>
+                                    </>
+                            }
+
   </div>
 </div>
         </div>
