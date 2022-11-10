@@ -1,0 +1,44 @@
+[
+    {
+        "_id" : "1",
+        "title": "Weeding Photography",
+        "price": "200",
+        "img":"https://i.ibb.co/vP0Q9V9/258-wedding-photographer-taking-pictures-of-bride-posing-on-ground-in-wedding-dress.jpg",
+        "description": "Wedding photographers capture memories for brides and grooms, creating a photographic narrative of wedding ceremonies. They take action shots of pre-ceremony preparations, the marriage ceremony, and the reception"
+    },
+    {
+        "_id" : "2",
+        "title": "Travel Photography",
+        "price": "150",
+        "img":"https://i.ibb.co/vwCxGK4/4a4dc66f729015ca56c11166c68c2f97.jpg",
+        "description": "Travel photography is a form of photography that for example involves photography of landscapes, historical buildings, cultures, and people in a specific place and destination to document a certain place and make others make to wish they were there."
+    },
+    {
+        "_id" : "3",
+        "title": "Food & Drink Photography",
+        "price": "170",
+        "img":"https://i.ibb.co/rvrytfW/Kettners0785-Kettners-Lau-hires.jpg",
+        "description": "Accomplished at working with restaurants, publishers and PR & Advertising agencies to create distinctive Food & Drink photography. Including studio photoshoots as well as still-life or lifestyle imagery on location at restaurants, private members clubs, cafes or bars. The resulting photographs are then implemented across websites, social media and in print collateral such as magazines"
+    },
+    {
+        "_id" : "4",
+        "title": "Event Photography",
+        "price": "500",
+        "img":"https://i.ibb.co/f1xPXRv/35-JLau-Pride-MS16-216.jpg",
+        "description": "Accomplished at working with restaurants, publishers and PR & Advertising agencies to create distinctive Food & Drink photography. Including studio photoshoots as well as still-life or lifestyle imagery on location at restaurants, private members clubs, cafes or bars. The resulting photographs are then implemented across websites, social media and in print collateral such as magazines"
+    },
+    {
+        "_id" : "5",
+        "title": "Floral Photography",
+        "price": "80",
+        "img":"https://i.ibb.co/0mYSy3F/36-JLau-0416-studio-4.jpg",
+        "description": "Working closely with florists to create floral arrangements for e-commerce websites, social media and print collateral. Jamie Lau specialises in product photography with attention to detail that shows the exact colour and size of bouquets for online shops, to lifestyle photography with models and varied environments."
+    },
+     {
+        "_id" : "6",
+        "title": "Corporate Photography",
+        "price": "300",
+        "img":"https://i.ibb.co/JmFZ0hR/09-Jamie-Lau-Values-6056.jpg",
+        "description": "Corporate photography for amongst others, Marks & Spencer and Soho House, commissioned to take portraits of the people who make up these companies and visit workplaces to capture what makes working for these companies unique."
+    }
+]
