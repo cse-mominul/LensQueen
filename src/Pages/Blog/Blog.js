@@ -5,7 +5,7 @@ const Blog = () => {
     return (
     <div className='divStyle'>
         <div className='blogStyle'>
-        <h1 className='text-3xl text-center pt-4 pb-2'>My Blog</h1>
+        <h1 className='text-center text-secondary text-3xl mt-4 mb-3 font-semibold'>My Blog</h1>
     <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3">
     <div className="collapse-title text-xl font-medium">
     What is Difference between SQL and NoSQL?

@@ -46,13 +46,13 @@ const Header = () => {
                                 user?.uid ?
                                     <>
                                    
-                                    <button className='btn' variant="light" onClick={handleLogOut}>Log out</button>
+                                    <button className='btn btn-outline' variant="light" onClick={handleLogOut}>Log out</button>
                                     <img className='rounded-full ml-4 w-20' src={user?.photoURL}  alt=''></img>
                                     </>
                                     :
                                     <>
-                                        <Link className='btn mr-2' to='/login'>Login</Link>
-                                        <Link className='btn' to='/singup'>SingUp</Link>
+                                        <Link className='btn btn-outline mr-2' to='/login'>Login</Link>
+                                        <Link className='btn btn-outline' to='/singup'>SingUp</Link>
                                     </>
                             }
 
