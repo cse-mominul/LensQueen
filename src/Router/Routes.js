@@ -48,7 +48,7 @@ const routes = createBrowserRouter([
         {
             path:'/service/:id',
             element: <ServicesDetails></ServicesDetails>,
-            loader: ({params})=> fetch(`http://localhost:5000/services/${params.id}`)
+            loader: ({params})=> fetch(`https://lensqueenserver.vercel.app/services/${params.id}`)
         },
         { path: '/ser',
         element: <Serviceall></Serviceall>

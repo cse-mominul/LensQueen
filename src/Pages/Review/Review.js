@@ -9,7 +9,7 @@ const Review = () => {
     const {displayName} = user;
     const [review, setReview] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/reviews')
+        fetch('https://lensqueenserver.vercel.app/reviews')
         .then(res => res.json())
         .then(data => setReview(data))
     },[])
@@ -27,7 +27,7 @@ const Review = () => {
             review: review,
             course: course,
         }
-        fetch('http://localhost:5000/reviews',{
+        fetch('https://lensqueenserver.vercel.app/reviews',{
             method: "POST",
             headers:{
                 "content-type": "application/json"
