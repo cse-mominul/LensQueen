@@ -6,6 +6,7 @@ import Review from "../Pages/Review/Review";
 import Services from "../Pages/Services/Services";
 import ServicesDetails from "../Pages/Services/ServicesDetails";
 import SingUp from "../Pages/SingUp/SingUp";
+import PrivateRoute from "./PrivateRoute";
 
 const { createBrowserRouter } = require("react-router-dom");
 const { default: Main } = require("../Layout/Main");
@@ -33,7 +34,7 @@ const routes = createBrowserRouter([
         },
         {
             path: '/review',
-            element: <Review></Review>
+            element: <PrivateRoute><Review></Review></PrivateRoute>
         },
         {
             path: '/service',
@@ -41,7 +42,7 @@ const routes = createBrowserRouter([
         },
         {
             path: '/addservice',
-            element: <AddService></AddService>
+            element: <PrivateRoute><AddService></AddService></PrivateRoute>
         },
         {
             path:'/service/:id',
