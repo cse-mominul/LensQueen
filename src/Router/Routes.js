@@ -3,6 +3,7 @@ import Blog from "../Pages/Blog/Blog";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 import Review from "../Pages/Review/Review";
+import Serviceall from "../Pages/Services/Serviceall";
 import Services from "../Pages/Services/Services";
 import ServicesDetails from "../Pages/Services/ServicesDetails";
 import SingUp from "../Pages/SingUp/SingUp";
@@ -47,7 +48,11 @@ const routes = createBrowserRouter([
         {
             path:'/service/:id',
             element: <ServicesDetails></ServicesDetails>,
-            loader: ({params})=> fetch(`https://lensqueenserver.vercel.app/services/${params.id}`)
+            loader: ({params})=> fetch(`http://localhost:5000/services/${params.id}`)
+        },
+        { path: '/ser',
+        element: <Serviceall></Serviceall>
+
         }
        ]
         

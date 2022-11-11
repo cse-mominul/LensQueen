@@ -5,7 +5,7 @@ import SingleCard from '../SingleCard/SingleCard';
 const Services = () => {
     const [services, setServices] = useState([]);
     useEffect(()=>{
-        fetch('https://lensqueenserver.vercel.app/services')
+        fetch('http://localhost:5000/services')
         .then(res => res.json())
         .then(data => setServices(data))
     },[])
@@ -26,7 +26,7 @@ const Services = () => {
 
             </div>
             <div className='text-center my-4'>
-            <Link to='/service'> <button className='btn btn-outline btn-secondary'>See All</button></Link>
+            <Link to='/ser'> <button className='btn btn-outline btn-secondary'>See All</button></Link>
 
             </div>
             
